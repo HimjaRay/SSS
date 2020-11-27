@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+	body{
+		font-family: "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+	</style>
+</head>
+<body>
+
+<h1><b>Street Style Store</b></h1>
+
+<div class="ui-widget">
+	<p><b>Street Style Store</b> - Shop for Street Style footwear, clothes Online in India. Checkout trendy collection of heels, flats & more from Street Style Store.</p>
+</div>
+
+<h1></h1>
+
+
+<!-- Accordion -->
+<h2 class="demoHeaders">Accordion</h2>
+<div id="accordion">
+	<h3>Description</h3>
+	<div>Online Shopping India - Buy mobiles, laptops, cameras, books, watches, apparel, shoes and e-Gift Cards. Free Shipping & Cash on Delivery.See what being an  Prime member is all about. Free delivery, exclusive deals, tons of movies and music. Explore Prime.The SSS Shopping, UPI, Money Transfer, Bill Payment App brings to you, over 17 Crore original products, at great prices & deals.</div>
+	<h3>Get In Touch</h3>
+	<div>Contact us: +91-11-41171712</div>
+	<h3>About US</h3>
+	<div>Streetstylestore.com makes shopping for casual flats, workwear heels, weekend outfits, party dresses, and formal clothes a perfectly positive experience, and once you have your ingenious ensemble pieced together, we invite you to share your outfit ideas with our community of independent women .</div>
+</div>
+
+<br>
+
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+    
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>
